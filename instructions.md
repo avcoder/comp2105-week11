@@ -34,23 +34,92 @@
 Symbols allows for smart reuse and each symbol type has its own attributes
 
 - create new layer up top "Linkbar"
-
-## Button symbols
+- choose rectangle tool (no stroke, make fill = 36% alpha)
+- draw rectangle for linkbar
+- select rectangle
+- Modify > Convert to Symbol "linkbar" (movie clip)
 
 ## Use motion tweens
 
+- unlock linkbar
+- right click on rectangle (linkbar) > Create Motion Tween
+- Make linkbar start offscreen-right, then at 2s mark start to move onscreen
+
 ## Motion editor
+
+- double click on linkbar motion tween
+- select Bounce and Spring > doubleclick BounceIn
+- test it
 
 ## Set up the camera
 
+- click Camera tool
+- notice new things (new column beside eye/lock, slider indicating zoom/pan)
+- unlock all
+- select all rows but camera
+- shift all frames to 1s mark
+- insert frames on camera row right click last frame > insert frame
+- retain background at frame 1: drag grunge texture back to frame 1
+
 ## Animate the camera
+
+- lock all rows, goto 25s mark on camera row > insert keyframe (this preserve default cam settings)
+- goto 1s frame for camera, rotate 20deg, zoom 200%
+- rightclick any frame in camera > create classic tween
+- test
+- retain name at frame 1: drag name back to frame 1
+- pin name to camera (may have to click Advanced button prompt to allow it)
 
 ## Target platform matters (converting to canvas)
 
-## Build a welcome action
+When exporting to HTML5 canvas, there are certain things that will not transfer over like 3d transforms, filters, certain text-types
+
+- File > Convert to > HTML5 Canvas
+- Save it
+- Test it
+- Explore files
+
+## Button symbols
+
+Button symbols have a special timeline composed of 4 distinct frames representing common states
+
+- click away
+- choose linkbar layer
+- choose Polygon tool > Options > star
+- draw star
+- while it's selected Modify > Convert to Symbol > Button > "star"
+- double click star button to view 4 states
+- create new keyframe for each state except hit
+- make 'over' state tilt and scale using the Free Transform tool
+- make 'down' state change colour
+- for 'hit' state, right cilck frame and select insert blank keyframe
+- choose rectangle / neon green
+- draw rectangle for hit area
+- go back to scene1, test it
 
 ## Add interaction
 
+- Create new layer "Actions"
+- goto last frame: rightclick > insert blank keyframeframe 1, click Window > Actions
+- Use wizard to stop this timeline on this frame (so animation doesn't loop infinitely)
+
 ## Interactive button layout
 
+- unlock linkbar
+- doubleclick linkbar
+- create new layer "buttons"
+- open our project library, drag star to linkbar
+- create new layer "text"
+- add text "github"
+
 ## Code the nav
+
+- double click linkbar
+- click on star
+- type an instance name under props "github_btn"
+- lock all layers
+- create new top layer "actions" window > actions
+- Goto webpage (adjust url) click next
+- select On mouse click
+- select github_btn
+- Finish and Add
