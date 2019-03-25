@@ -123,3 +123,5 @@ Button symbols have a special timeline composed of 4 distinct frames representin
 - select On mouse click
 - select github_btn
 - Finish and Add
+
+* Insert 2 more buttons, choose your own links
