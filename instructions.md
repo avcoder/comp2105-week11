@@ -4,13 +4,18 @@
 - change view from Essentials to Classic
 - set background color to beige > Properties > Stage
 - import my photo/avatar File > Import to stage > myphoto.jpg
+- rename layer to 'photo'
 - import psd File > Import to stage > background-texture.psd
   - uncheck "Background Texture"
   - click on Grunge Texture so it's highlighted now
   - select "Flattened bitmap image"
   - click Import
 - drag/move Grunge texture to bottom so my photo appears again
+
+# Name text
+
 - Create new layer: Type in your name as text
+- rename layer 'name'
 
 ## Stroke styles and Vector Art brushes
 
@@ -34,10 +39,30 @@
 Symbols allows for smart reuse and each symbol type has its own attributes
 
 - create new layer up top "Linkbar"
+- lock all other layers
 - choose rectangle tool (no stroke, make fill = 36% alpha)
 - draw rectangle for linkbar
 - select rectangle
 - Modify > Convert to Symbol "linkbar" (movie clip)
+
+## Button symbols
+
+Button symbols have a special timeline composed of 4 distinct frames representing common states
+
+- click away
+- choose linkbar layer
+- choose Polygon tool > Options > star
+- draw star
+- while it's selected Modify > Convert to Symbol > Button > "star"
+- double click star button to view 4 states
+- rename layer1 to "star"
+- create new keyframe for each state except hit
+- make 'over' state tilt and scale using the Free Transform tool
+- make 'down' state change colour
+- for 'hit' state, right cilck frame and select insert blank keyframe
+- choose rectangle / neon green
+- draw rectangle for hit area
+- go back to scene1, test it
 
 ## Use motion tweens
 
@@ -78,24 +103,6 @@ When exporting to HTML5 canvas, there are certain things that will not transfer 
 - Save it
 - Test it
 - Explore files
-
-## Button symbols
-
-Button symbols have a special timeline composed of 4 distinct frames representing common states
-
-- click away
-- choose linkbar layer
-- choose Polygon tool > Options > star
-- draw star
-- while it's selected Modify > Convert to Symbol > Button > "star"
-- double click star button to view 4 states
-- create new keyframe for each state except hit
-- make 'over' state tilt and scale using the Free Transform tool
-- make 'down' state change colour
-- for 'hit' state, right cilck frame and select insert blank keyframe
-- choose rectangle / neon green
-- draw rectangle for hit area
-- go back to scene1, test it
 
 ## Add interaction
 
