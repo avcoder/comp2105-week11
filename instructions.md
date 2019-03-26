@@ -53,7 +53,7 @@ Button symbols have a special timeline composed of 4 distinct frames representin
 - choose linkbar layer
 - choose Polygon tool > Options > star
 - draw star
-- while it's selected Modify > Convert to Symbol > Button > "star"
+- while it's selected Modify > Convert to Symbol > Button > "star_btn"
 - double click star button to view 4 states
 - rename layer1 to "star"
 - create new keyframe for each state except hit
@@ -66,6 +66,7 @@ Button symbols have a special timeline composed of 4 distinct frames representin
 
 ## Use motion tweens
 
+- delete star
 - unlock linkbar
 - right click on rectangle (linkbar) > Create Motion Tween
 - Make linkbar start offscreen-right, then at 2s mark start to move onscreen
