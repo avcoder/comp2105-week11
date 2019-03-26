@@ -108,13 +108,15 @@ When exporting to HTML5 canvas, there are certain things that will not transfer 
 ## Add interaction
 
 - Create new layer "Actions"
-- goto last frame: rightclick > insert blank keyframeframe 1, click Window > Actions
+- goto last frame: rightclick > insert blank keyframe
+- click last frame, click Window > Actions
 - Use wizard to stop this timeline on this frame (so animation doesn't loop infinitely)
 
 ## Interactive button layout
 
 - unlock linkbar
 - doubleclick linkbar
+- rename layer1 'linkbar'
 - create new layer "buttons"
 - open our project library, drag star to linkbar
 - create new layer "text"
@@ -126,7 +128,10 @@ When exporting to HTML5 canvas, there are certain things that will not transfer 
 - click on star
 - type an instance name under props "github_btn"
 - lock all layers
-- create new top layer "actions" window > actions
+- create new top layer "actions"
+- choose frame 1
+- window > actions
+- use wizard
 - Goto webpage (adjust url) click next
 - select On mouse click
 - select github_btn
